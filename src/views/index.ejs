@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Inicio' }) %>
+
+	<body>
+		<!-- Header -->
+		<%- include('partials/headerNavbar') %>
+			<!-- /Header -->
+
+			<!-- Banner -->
+			<div class="banner"></div>
+			<!-- /Banner -->
+
+			<!-- ultima visita -->
+			<div class="container products-wrapper">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="products-title">Basado en tu última visita</h2>
+					</div>
+					<!-- Show the "visited" products -->
+					<% productsVisited.forEach(product=> { %>
+						<div class="col-12 col-sm-6 col-lg-3">
+							<section class="product-box">
+								<a href="/products/detail/<%- product.id %>">
+									<!-- Al presionar en la tarjeta, en el producto, este me llevara al detalle del producto -->
+									<figure class="product-box_image">
+										<img src="/images/products/<%- product.image %>" alt="imagen de producto">
+									</figure>
+									<article class="product-box_data">
+										<h2><%- toThousand(product.price - product.price * product.discount / 100) %></h2> <!-- Sacamos el porcentaje para los precios -->
+										<span><%- product.discount > 0 ? `${product.discount}% OFF`: "" %></span> <!-- En el caso de que tenga descuento mayor de 0 se va a mostrar ese descuento y sino, no-->
+										<p><%- product.name %></p>
+										<i class="fas fa-truck"></i>
+									</article>
+								</a>
+							</section>
+						</div>
+					<% }) %>
+				</div>
+			</div>
+			<!-- /ultima visita -->
+
+			<!-- Ofertas -->
+			<div class="container products-wrapper">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="products-title">Ofertas</h2>
+					</div>
+					<!-- Show the "in-sale" products -->
+					<% productsInSale.forEach(product => { %>
+						<div class="col-12 col-sm-6 col-lg-3">
+							<section class="product-box">
+								<!-- etiqueta a, que al hacer click sobre la imagen del producto me llevará al detalle de producto -->
+								<a href="/products/detail/<%- product.id %>">
+									<!-- Al presionar en la tarjeta, en el producto, este me llevara al detalle del producto -->
+									<figure class="product-box_image">
+										<img src="/images/products/<%- product.image %>" alt="imagen de producto">
+									</figure>
+									<article class="product-box_data">
+										<!-- Sacamos el porcentaje para los precios -->
+										<h2><%- toThousand(product.price - product.price * product.discount / 100) %></h2>  
+										<span><%- product.discount %> % OFF</span>
+										<p><%- product.name %></p>
+										<i class="fas fa-truck"></i>
+									</article>
+								</a>
+							</section>
+						</div>
+					<% }) %>
+
+				</div>
+			</div>
+			<!-- /Ofertas -->
+
+			<!-- footer -->
+			<%- include('partials/footer') %>
+				<!-- /footer -->
+	</body>
+
+</html>
