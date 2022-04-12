@@ -1,11 +1,10 @@
-# CRUD - Create Read Update Delete
+# FORMAR-PROYECTO-PARTE-7-Y-8-MERCADO-LIEBRE
 
 ![logo](public/images/logo-mercado-liebre.svg)
 ![banner](public/images/img-home-banner.jpg)
 
-# Episodio I y II
 
-## Objetivo episodio 1
+## Objetivo parte 1
 Todo eMarket que se respete necesita que sea posible agregar, borrar y modificar
 productos y que los mismos se persistan en una base de datos. Adicionalmente, también
 debe permitir leer los productos presentes en dicha base de datos de una manera rápida
@@ -18,7 +17,7 @@ Así que nuestro enfoque en esta oportunidad será desarrollar dicha funcionalid
 nuestros inversores quieren salir con la web al aire lo antes posible.
 ¡Buena suerte!😎👍✨
 
-## Objetivo episodio 2
+## Objetivo parte 2
 En la ejercitación anterior practicamos cómo debemos preparar el sistema de ruteo de
 una aplicación para poder codificar un CRUD (Create, Read, Update, Delete) o ABM (Alta,
 Baja, Modificación).
@@ -29,4 +28,6 @@ implementamos en la clase anterior. Además, estaremos trabajando en la subida d
 imágenes de los productos.
 ¡Buena suerte!😎👍✨
 
-# FORMAR-PROYECTO-PARTE-7-Y-8-MERCADO-LIEBRE
+
+
+
