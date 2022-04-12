@@ -15,7 +15,7 @@ Modificación) o CRUD (Create, Read, Update, Delete).
 
 Así que nuestro enfoque en esta oportunidad será desarrollar dicha funcionalidad, pues
 nuestros inversores quieren salir con la web al aire lo antes posible.
-¡Buena suerte!😎👍✨
+¡Buena suerte!
 
 ## Objetivo parte 2
 En la ejercitación anterior practicamos cómo debemos preparar el sistema de ruteo de
@@ -26,7 +26,7 @@ En esta ejercitación estaremos trabajando con nuestra fuente de datos JSON para
 que los cambios queden almacenados utilizando cada una de las rutas que
 implementamos en la clase anterior. Además, estaremos trabajando en la subida de
 imágenes de los productos.
-¡Buena suerte!😎👍✨
+¡Buena suerte!
 
 
 
